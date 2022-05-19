@@ -2,7 +2,7 @@
   <div class="ds-container d-flex">
     <div class="ds-side flex-shrink-0">
       <div>
-         <h5>Numero nel Pokedox:</h5>
+         <h5>Numero nel Pokadox:</h5>
         <h2># 1</h2>
       </div>
       
