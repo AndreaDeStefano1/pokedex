@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class=" h-100">
+      <img src="https://img.icons8.com/officexs/620/000000/pokedex.png"/>
+
+      <PokedexTopComp class="poke-sprite position-absolute"/>
+
+      <PokedexBotComp class="poke-info position-absolute"/>
+
+      
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokedexTopComp from './components/PokedexTopComp.vue';
+import PokedexBotComp from './components/PokedexBotComp.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokedexTopComp,
+    PokedexBotComp
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+@import '~bootstrap/scss/bootstrap.scss';
+
+div{
+  position: relative;
+  img{
+    height: 1000px;
+  }
+}
+.poke-sprite{
+  top: 125px;
+  left: 313px;
+}
+.poke-info{
+  top: 562px;
+  left: 375px;
 }
 </style>
