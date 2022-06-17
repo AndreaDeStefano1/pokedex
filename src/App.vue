@@ -5,7 +5,7 @@
 
       <PokedexTopComp class="poke-sprite position-absolute"/>
 
-      <PokedexBotComp class="poske-info position-absolute"/>
+      <PokedexBotComp class="possdske-info position-absolute"/>
 
       
     </div>
